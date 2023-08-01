@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+/.next/
+/out/
+
+# Dependency directories
+/node_modules/
+/.pnp/
+.pnp.js
+
+# Testing
+/coverage/
+
+# Build artifacts
+/build/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Automatically generated TypeScript files
+*.tsbuildinfo
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Miscellaneous
+*.pem
+*.p12
+*.vsix
+.env
+
+# Backup files
+*.bak
