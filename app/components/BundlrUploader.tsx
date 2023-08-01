@@ -92,7 +92,7 @@ export const BundlrUploader: React.FC = () => {
 						{!selectedFile && (
 							<button
 								onClick={() => {
-									const input = document.querySelector('input[type="file"]');
+									const input = document.querySelector('input[type="file"]') as HTMLInputElement;
 									if (input) {
 										input.click();
 									}
