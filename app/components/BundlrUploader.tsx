@@ -57,6 +57,8 @@ export const BundlrUploader: React.FC = () => {
 		// Build tags
 		const tags: Tag[] = [];
 		tags.push({ name: "Content-Type", value: fileType });
+
+		tags.push({ name: "License", value: "yRj4a5KMctX_uOmKWCFJIjmY8DeJcusVk6-HzLiM_t8" });
 		if (licenseFeeType !== "None") tags.push({ name: "License-Fee", value: licenseFeeType + "-" + licenseFeeUnit });
 		if (commercialUse !== "None") tags.push({ name: "Commerical-Use", value: commercialUse });
 		tags.push({ name: "Currency", value: currency });
