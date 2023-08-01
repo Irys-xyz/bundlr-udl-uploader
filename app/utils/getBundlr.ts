@@ -1,3 +1,7 @@
+interface Window {
+	ethereum?: any;
+}
+
 import { WebBundlr } from "@bundlr-network/client";
 import { ethers } from "ethers";
 
@@ -12,8 +16,10 @@ const getBundlr = async (
 	currency = "matic",
 	providerUrl = "https://rpc-mumbai.maticvigil.com",
 ) => {
+	//@ts-ignore
 	const provider = new ethers.BrowserProvider(window.ethereum);
 	const signer = await provider.getSigner();
+	//@ts-ignore
 	provider.getSigner = () => signer;
 	//@ts-expect-error hack
 	signer._signTypedData = (domain, types, value) => signer.signTypedData(domain, types, value);
