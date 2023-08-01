@@ -1,6 +1,6 @@
 # Bundlr UDL Uploader
 
-<img src="https://github.com/Bundlr-Network/bundlr-udl-uploder/blob/master/assets/udl-uploader.png?raw=true" />
+<img height="400" src="https://github.com/Bundlr-Network/bundlr-udl-uploder/blob/master/assets/udl-uploader.png?raw=true" />
 
 This is a [Bundlr](https://bundlr.network) + [Next.js](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) project that demonstrates how to upload content with a [UDL](https://arwiki.wiki/#/en/Universal-Data-License-How-to-use-it#toc_Commercial_Use) to [Arweave](https://www.arweave.org/) using [Bundlr](<(https://bundlr.network)>).
 
