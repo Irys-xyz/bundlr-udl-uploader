@@ -1,8 +1,8 @@
 # Bundlr UDL Uploader
 
-<img height="400" src="https://github.com/Bundlr-Network/bundlr-udl-uploder/blob/master/assets/udl-uploader.png?raw=true" />
-
 This is a [Bundlr](https://bundlr.network) + [Next.js](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/) + [Tailwind](https://tailwindcss.com/) project that demonstrates how to upload content with a [UDL](https://arwiki.wiki/#/en/Universal-Data-License-How-to-use-it#toc_Commercial_Use) to [Arweave](https://www.arweave.org/) using [Bundlr](<(https://bundlr.network)>).
+
+<img height="400" src="https://github.com/Bundlr-Network/bundlr-udl-uploder/blob/master/assets/udl-uploader.png?raw=true" />
 
 ## Getting Started
 
@@ -20,7 +20,9 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Overview
 
-This repo demonstrates how to attach a UDL (Universal Data License) to files uploaded to Arweave using Bundlr. You can fork and build directly on top of it or copy-paste specific code into your projects.
+This repo demonstrates how to attach a UDL (Universal Data License) to files uploaded to Arweave using Bundlr. The UDL is built dynamically using the parameters specified in the UI, converted to a set of metatags that attached to the file at upload.
+
+You can fork and build directly on top of it or copy-paste specific code into your projects.
 
 -   `utils/getBundlr.ts`: Configures and returns a Bundlr object. This is where you set your node and currency
 -   `utils/fundAndUpload.ts`: Is passed a file and tags, funds the node if necessary and then uploads
@@ -53,6 +55,9 @@ query getUDL {
   }
 }
 ```
+
+<img height="400" src="https://github.com/Bundlr-Network/bundlr-udl-uploder/blob/master/assets/graphql-udl.png?raw=true" />
+
 
 ## Further Reading
 - [Bundlr GraphQL](https://docs.bundlr.network/developer-docs/graphql)
