@@ -24,16 +24,20 @@ const fundAndUpload = async (selectedFile: File, tags: Tag[]) => {
 		const price = await bundlr.getPrice(selectedFile?.size);
 		const balance = await bundlr.getLoadedBalance();
 
-		if (price.isGreaterThanOrEqualTo(balance)) {
-			console.log("Funding node.");
-			await bundlr.fund(price);
-		} else {
-			console.log("Funding not needed, balance sufficient.");
-		}
+		//if (price.isGreaterThanOrEqualTo(balance)) {
+		console.log("Funding node.");
+		await bundlr.fund(price);
+		console.log("Fund successful.");
+		// } else {
+		// 	console.log("Funding not needed, balance sufficient.");
+		// }
+		console.log("Uploading");
 
 		const tx = await bundlr.upload(dataStream, {
 			tags,
 		});
+		console.log("Upload successful");
+
 		return tx.id;
 	} catch (e) {
 		console.log("Error on upload, ", e);
