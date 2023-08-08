@@ -4,6 +4,7 @@ interface Window {
 
 import { WebBundlr } from "@bundlr-network/client";
 import { ethers } from "ethers";
+
 import BigNumber from "bignumber.js";
 
 const getBundlr = async (
