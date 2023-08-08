@@ -10,7 +10,7 @@ import BigNumber from "bignumber.js";
 const getBundlr = async (
 	url = "https://devnet.bundlr.network",
 	currency = "matic",
-	providerUrl = "https://rpc-mumbai.maticvigil.com",
+	providerUrl = "https://polygon-mumbai.g.alchemy.com/v2/demo",
 ) => {
 	//@ts-ignore
 	const provider = new ethers.BrowserProvider(window.ethereum);
